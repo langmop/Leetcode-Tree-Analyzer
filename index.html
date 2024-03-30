@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      #inputDiv {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      #inputArea {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 12px;
+      }
+      #apply {
+        padding: 4px;
+      }
+      #clear {
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="inputDiv">
+      <textarea id="inputArea" value=""></textarea>
+      <div>
+        <button id="apply">Apply</button>
+        <button id="clear">Clear</button>
+      </div>
+    </div>
+    <canvas id="root"></canvas>
+    <script type="module" src="./drawBinaryTree.js"></script>
+  </body>
+</html>
