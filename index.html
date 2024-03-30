@@ -25,10 +25,35 @@
       #clear {
         padding: 4px;
       }
+      @media screen and (max-width: 600px) {
+        #inputDiv {
+          position: relative;
+        }
+      }
+      .heading {
+        color: black;
+        font-size: large;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .list {
+        margin-left: 12px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
     </style>
   </head>
   <body>
     <div id="inputDiv">
+      <div class="heading">Leetcode Tree Visualization</div>
+      <div>
+        Example
+        <ul class="list">
+          <li>Put the below input</li>
+          <li>1,2,3,4</li>
+          <li>and see the visualization</li>
+        </ul>
+      </div>
       <textarea id="inputArea" value=""></textarea>
       <div>
         <button id="apply">Apply</button>
